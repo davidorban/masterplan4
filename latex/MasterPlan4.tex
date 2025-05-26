@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{parskip}
+
+% Document metadata
+\title{Master Plan 4: \\ \Large\textbf{Sustainable Multiplanetary Civilization Through Interplanetary AI}}
+\author{David Orban}
+\date{\today}
+
+% Custom commands
+\newcommand{\todo}[1]{{\color{red}[TODO: #1]}}
+\newcommand{\ai}{AI\xspace}
+\newcommand{\eg}{e.g.\xspace}
+\newcommand{\ie}{i.e.\xspace}
+
+% Document settings
+\geometry{margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge\bfseries Master Plan 4\par}
+    \vspace{0.5cm}
+    {\LARGE Sustainable Multiplanetary Civilization\\Through Interplanetary AI\par}
+    \vspace{2cm}
+    \includegraphics[width=0.4\textwidth]{../images/Master Plan 4 Diagram.png}\par
+    \vspace{2cm}
+    {\Large\itshape David Orban\par}
+    \vspace{0.5cm}
+    {\large \today\par}
+    \vfill
+    {\small \url{https://github.com/davidorban/masterplan4}}
+\end{titlepage}
+
+\tableofcontents
+
+% Include chapters
+\input{sections/00-abstract}
+\input{sections/01-introduction}
+\input{sections/02-vision}
+\input{sections/03-technology}
+\input{sections/04-roadmap}
+\input{sections/05-conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
