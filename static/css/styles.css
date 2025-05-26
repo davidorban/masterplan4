@@ -11,36 +11,57 @@ body {
     @apply max-w-none;
 }
 
+/* Make sure these styles are applied */
+article.prose h2,
 .prose h2 {
     @apply text-2xl font-bold mt-8 mb-4 text-gray-900;
+    display: block !important;
 }
 
+article.prose h3,
 .prose h3 {
     @apply text-xl font-semibold mt-6 mb-3 text-gray-800;
+    display: block !important;
 }
 
+article.prose p,
 .prose p {
     @apply my-4;
 }
 
-.prose ul, .prose ol {
+article.prose ul,
+article.prose ol,
+.prose ul,
+.prose ol {
     @apply my-4 pl-6;
 }
 
+article.prose ul,
 .prose ul {
     @apply list-disc;
 }
 
+article.prose ol,
 .prose ol {
     @apply list-decimal;
 }
 
+article.prose li,
 .prose li {
     @apply my-2;
 }
 
+article.prose .lead,
 .prose .lead {
     @apply text-lg text-gray-700;
+}
+
+/* Ensure images are visible */
+article.prose img,
+.prose img {
+    @apply my-4 rounded-lg shadow-md;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Hero section */
