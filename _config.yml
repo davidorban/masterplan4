@@ -1,0 +1,31 @@
+# Configuration for GitHub Pages
+# This file ensures GitHub Pages serves the files as static content
+
+title: Master Plan 4
+description: Sustainable Multiplanetary Civilization Through Interplanetary AI
+baseurl: /masterplan4
+url: https://davidorban.github.io
+
+# Build settings
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor
+
+# Add the data directory for the cached web responses
+# data_dir: _data
+
+# Enable or disable the kramdown syntax highlighter
+kramdown:
+  syntax_highlighter: rouge
+
+# Add any other configuration options here
