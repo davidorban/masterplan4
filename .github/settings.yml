@@ -1,0 +1,40 @@
+# GitHub Repository Settings
+# This file helps configure repository settings
+
+repository:
+  # Default branch
+  default_branch: main
+
+  # Branch protection rules
+  branch_protection:
+    - pattern: main
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        require_code_owner_reviews: false
+      required_status_checks:
+        strict: true
+        contexts: []
+      enforce_admins: true
+      required_linear_history: true
+      allow_force_pushes: false
+      allow_deletions: false
+      required_conversation_resolution: true
+
+  # GitHub Pages settings
+  pages:
+    branch: gh-pages
+    path: /
+
+
+# GitHub Actions permissions
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Environment settings
+environments:
+  github-pages:
+    deployment_branch_policy:
+      protected_branches: false
+      custom_branch_policies: true
